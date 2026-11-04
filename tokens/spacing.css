@@ -1,0 +1,35 @@
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 28px;
+  --space-7: 40px;
+  --space-8: 56px;
+  --space-9: 72px;
+  --space-10: 96px;
+
+  /* Formas: retângulos são retos; a curva da marca é o arco da janela mourisca */
+  --radius-none: 0;
+  --radius-sm: 8px;      /* ícone de app pequeno */
+  --radius-app: 26px;    /* ícone de app 120px */
+  --radius-round: 50%;
+  --radius-arch: 9999px 9999px 0 0; /* janela mourisca: topo semicircular */
+
+  --border-hairline: 1px;
+  --border-regular: 1.5px;
+  --border-strong: 2px;
+
+  --shadow-hairline: inset 0 0 0 1px var(--creme-600);
+  --shadow-object: 0 12px 28px rgba(0,0,0,0.30); /* só em mockups de objeto físico */
+  --shadow-object-lg: 0 24px 40px rgba(0,0,0,0.35);
+  --ring-avatar: 0 0 0 4px #FFFFFF, 0 0 0 6px #D8D2C4;
+
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-fast: 150ms;
+  --dur-base: 240ms;
+
+  --pattern-tile: 96px;
+  --clear-space: 1x; /* x = altura das letras de HIKAYA */
+}

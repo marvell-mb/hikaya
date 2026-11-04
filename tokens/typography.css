@@ -1,0 +1,29 @@
+:root {
+  --font-display: 'Cinzel', 'Trajan Pro', serif;      /* títulos, coleções — sempre caixa alta */
+  --font-body: 'Alegreya Sans', 'Gill Sans', sans-serif; /* textos, produto, botões */
+  --font-arabic: 'Amiri', 'Times New Roman', serif;    /* palavras em árabe, só como detalhe */
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace; /* fichas técnicas e documentação */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  /* Escala (px) */
+  --text-display: 56px;  /* capa, hero */
+  --text-h1: 48px;
+  --text-h2: 32px;
+  --text-h3: 24px;
+  --text-lead: 20px;
+  --text-body: 17px;
+  --text-body-sm: 15px;
+  --text-caption: 14px;
+  --text-label: 13px;
+
+  --leading-tight: 1.05;
+  --leading-heading: 1.2;
+  --leading-body: 1.5;
+
+  --tracking-display: 0.02em;
+  --tracking-label: 0.1em;
+  --tracking-badge: 0.08em;
+}

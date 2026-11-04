@@ -1,0 +1,19 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Core · Button, Badge, Price" -->
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:24px;background:var(--bg-page);font-family:var(--font-body);color:var(--fg-1)}.m{font-family:var(--font-mono);font-size:12px;color:var(--fg-label)}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const NS = (() => { for (const k of Object.keys(window)) { try { const v = window[k]; if (v && typeof v === 'object' && v.Button && v.Logo) return v; } catch (e) {} } return {}; })();
+if (!NS.Button) document.getElementById('root').innerHTML = '<p class="m">Bundle do design system ainda não gerado.</p>';
+const { Button, Badge, Price } = NS;
+const Row = ({label, children}) => <div style={{display:'grid',gridTemplateColumns:'90px 1fr',gap:16,alignItems:'center'}}><span className="m">{label}</span><div style={{display:'flex',gap:12,alignItems:'center',flexWrap:'wrap'}}>{children}</div></div>;
+if (NS.Button) ReactDOM.createRoot(document.getElementById('root')).render(<div style={{display:'flex',flexDirection:'column',gap:20}}>
+  <Row label="Button"><Button>Ver coleção</Button><Button variant="secondary">Medidas</Button><Button variant="gold">Comprar</Button><Button variant="ghost">Saiba mais</Button><Button disabled>Esgotado</Button></Row>
+  <Row label="Tamanhos"><Button size="sm">Pequeno</Button><Button size="md">Médio</Button><Button size="lg">Grande</Button></Row>
+  <Row label="Badge"><Badge>Novo</Badge><Badge variant="promocao">−20%</Badge><Badge variant="frete">Frete grátis</Badge><Badge variant="esgotado">Esgotado</Badge><Badge variant="neutro">Últimas peças</Badge></Row>
+  <Row label="Price"><Price value={289} /><Price value={289} oldValue={349} installments="3x de R$ 96,33" /><div style={{background:'var(--bg-brand)',padding:'10px 14px'}}><Price value={159} size="sm" onBrand /></div></Row>
+</div>);
+</script></body></html>

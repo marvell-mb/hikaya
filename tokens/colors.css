@@ -1,0 +1,44 @@
+:root {
+  /* Base — paleta oficial (Fundamentos v1.0) */
+  --verde-900: #00402C;   /* Verde Hikaya · CMYK 92 45 80 55 */
+  --verde-800: #0E5640;   /* traço do padrão sobre verde */
+  --verde-700: #2E5446;   /* fundo de apoio escuro */
+  --dourado-500: #C29647; /* Dourado · CMYK 22 38 85 5 */
+  --dourado-700: #7A6A4A; /* dourado queimado: legendas e rótulos */
+  --creme-50:  #FFFFFF;
+  --creme-100: #FBF7EE;   /* fundo de página */
+  --creme-200: #F6EEDC;   /* Creme · CMYK 2 5 14 0 */
+  --creme-300: #EDE3CC;
+  --creme-400: #E9DDC3;
+  --creme-500: #E7DABD;   /* traço do padrão sobre creme */
+  --creme-600: #E6DCC6;   /* linhas e divisórias */
+  --creme-700: #DCCFB2;
+  --tinta-900: #1A1A1A;   /* Preto · CMYK 0 0 0 95 */
+  --tinta-800: #1F2A24;   /* texto principal (preto esverdeado) */
+  --tinta-700: #4A4A3E;   /* texto secundário */
+  --tinta-600: #5C5A4E;   /* legendas */
+  --vermelho-600: #B03A2E; /* erro, "não fazer" */
+
+  /* Semânticos */
+  --bg-page: var(--creme-100);
+  --bg-surface: var(--creme-200);
+  --bg-surface-2: var(--creme-400);
+  --bg-photo: var(--creme-50);       /* foto principal de marketplace */
+  --bg-brand: var(--verde-900);
+  --bg-brand-2: var(--verde-700);
+  --fg-1: var(--tinta-800);
+  --fg-2: var(--tinta-700);
+  --fg-3: var(--tinta-600);
+  --fg-label: var(--dourado-700);
+  --fg-brand: var(--verde-900);
+  --fg-on-brand: var(--creme-200);
+  --accent: var(--dourado-500);
+  --border: var(--creme-600);
+  --border-strong: var(--creme-700);
+  --rule-accent: var(--dourado-500);
+  --pattern-on-brand: var(--verde-800);
+  --pattern-on-surface: var(--creme-500);
+  --danger: var(--vermelho-600);
+  --link: var(--verde-900);
+  --link-hover: var(--dourado-500);
+}
